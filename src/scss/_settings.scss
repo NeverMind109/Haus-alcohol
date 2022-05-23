@@ -174,3 +174,13 @@ a {
     padding: 0;
   }
 }
+
+.burger {
+  @include burger;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    z-index: 100;
+  }
+}
