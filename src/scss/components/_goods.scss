@@ -1,0 +1,69 @@
+.goods {
+  background-color: var(--color-light);
+  &__container {
+    padding: 105px var(--container-offset) 140px;
+    border-bottom: 1px solid var(--color-silver);
+  }
+  &__title {
+    max-width: 675px;
+    font-family: "Liberation", sans-serif;
+    text-align: center;
+    margin: 0 auto 24px;
+  }
+  &__link-wrapper {
+    text-align: center;
+    margin-bottom: 82px;
+  }
+  &__link {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-black);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 27px;
+  }
+  &__item {
+  }
+}
+.product-card {
+  position: relative;
+  text-align: center;
+  &__img {
+    margin-bottom: 13px;
+  }
+  &__title {
+    margin-bottom: 16px;
+  }
+  &__descr {
+    max-width: 380px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--color-black);
+    margin-bottom: 27px;
+  }
+  &__link {
+    display: inline-block;
+  }
+  &__label {
+    @include flex-all-center;
+
+    position: absolute;
+    top: 23px;
+    right: 19px;
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-light);
+    background: var(--color-cod);
+    border-radius: 100%;
+    padding: 0 10px;
+  }
+}

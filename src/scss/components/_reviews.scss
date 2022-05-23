@@ -1,0 +1,25 @@
+.reviews {
+  background-color: var(--color-light);
+  &__container {
+    padding: 60px var(--container-offset) 40px;
+    border-bottom: 1px solid var(--color-silver);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.review {
+  &__link {
+    display: inline-block;
+    max-width: 300px;
+    text-align: center;
+  }
+  &__text {
+    margin-bottom: 36px;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+}
