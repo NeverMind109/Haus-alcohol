@@ -26,13 +26,12 @@
     justify-content: space-between;
     padding: 0 27px;
   }
-  &__item {
-  }
 }
 .product-card {
   position: relative;
   text-align: center;
   &__img {
+    background-image: var(--color-silver);
     margin-bottom: 13px;
   }
   &__title {

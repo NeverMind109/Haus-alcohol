@@ -1,0 +1,23 @@
+.advantages {
+  padding: 89px 0 50px;
+  &__container {
+    display: flex;
+  }
+  &__content {
+    padding-top: 50px;
+    margin-right: 55px;
+  }
+  &__image {
+    font-size: 0;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+}
+.advantage {
+  max-width: 385px;
+  &__title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
