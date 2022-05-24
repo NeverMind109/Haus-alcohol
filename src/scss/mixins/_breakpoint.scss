@@ -1,13 +1,11 @@
-/* stylelint-disable */
-
-@mixin for-desktop {
-  @media (min-width: (1025px)) {
+@mixin big-desktop {
+  @media (max-width: (1440px)) {
     @content;
   }
 }
 
-@mixin big-desktop {
-  @media (max-width: (1440px)) {
+@mixin big-tablet {
+  @media (max-width: (1200px)) {
     @content;
   }
 }
@@ -26,6 +24,12 @@
 
 @mixin mobile {
   @media (max-width: (576px)) {
+    @content;
+  }
+}
+
+@mixin mini-mobile {
+  @media (max-width: (425px)) {
     @content;
   }
 }

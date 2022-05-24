@@ -5,20 +5,64 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 140px;
+
+    @include big-tablet {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+    @include small-tablet {
+      margin-bottom: 35px;
+    }
+  }
+  &__notify {
+    @include big-tablet {
+      text-align: center;
+      margin-bottom: 35px;
+    }
   }
   &__nav {
     display: flex;
+
+    @include big-tablet {
+      justify-content: space-around;
+    }
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
   &__column {
     padding-top: 10px;
     &:nth-child(1) {
       margin-right: 84px;
+
+      @include big-tablet {
+        margin-right: 0;
+      }
+      @include small-tablet {
+        margin-bottom: 35px;
+      }
     }
     &:nth-child(2) {
       margin-right: 146px;
+
+      @include big-tablet {
+        margin-right: 0;
+      }
+      @include small-tablet {
+        margin-bottom: 35px;
+      }
     }
     &:nth-child(3) {
       margin-right: 33px;
+
+      @include big-tablet {
+        margin-right: 0;
+      }
+    }
+
+    @include big-tablet {
+      padding: 0;
     }
   }
   &__title {
@@ -27,16 +71,40 @@
     line-height: 72px;
     color: var(--color-light);
     margin-bottom: 12px;
+
+    @include tablet {
+      font-size: 30px;
+      line-height: 45px;
+    }
+    @include small-tablet {
+      font-size: 25px;
+      line-height: 35px;
+    }
   }
   &__descr {
     max-width: 430px;
     line-height: 27px;
     color: var(--color-light);
-    margin-bottom: 14px;
+    margin: 0 auto 14px;
+
+    @include big-tablet {
+      max-width: 75%;
+    }
+    @include small-tablet {
+      max-width: none;
+    }
   }
   &__form {
     position: relative;
     max-width: 440px;
+
+    @include big-tablet {
+      max-width: 75%;
+      margin: 0 auto;
+    }
+    @include small-tablet {
+      max-width: none;
+    }
   }
   &__input {
     width: 100%;
@@ -96,10 +164,24 @@
   }
   &__bottom-list {
     display: flex;
+
+    @include big-tablet {
+      justify-content: center;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
   &__bottom-item {
     &:not(:last-child) {
       margin-right: 63px;
+    }
+
+    @include tablet {
+      margin-bottom: 20px;
     }
   }
   &__bottom-link {
@@ -115,5 +197,9 @@
     font-size: 15px;
     line-height: 24px;
     color: var(--color-light);
+  }
+
+  @include tablet {
+    padding: 35px 20px;
   }
 }

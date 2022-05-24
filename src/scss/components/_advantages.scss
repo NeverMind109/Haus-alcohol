@@ -1,14 +1,44 @@
 .advantages {
   padding: 89px 0 24px;
+
+  @include small-tablet {
+    padding: 35px 0 0;
+  }
   &__container {
     display: flex;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__content {
     padding-top: 50px;
     margin-right: 55px;
+
+    @include tablet {
+      padding-top: 0;
+      margin-right: 0;
+      margin-bottom: 35px;
+    }
   }
   &__image {
     font-size: 0;
+
+    @include tablet {
+      height: 300px;
+    }
+    @include mobile {
+      height: 200px;
+    }
+    @include mini-mobile {
+      height: 200px;
+    }
+  }
+  &__img {
+    @include tablet {
+      height: 100%;
+    }
   }
   &__item {
     margin-bottom: 20px;
@@ -19,5 +49,14 @@
   &__title {
     text-align: left;
     margin-bottom: 20px;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  @include tablet {
+    max-width: none;
+    text-align: center;
   }
 }

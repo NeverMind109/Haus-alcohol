@@ -1,8 +1,18 @@
 .difference {
   padding: 60px 0 67px;
+
+  @include small-tablet {
+    padding: 35px 0;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
   &__image {
     display: flex;
@@ -11,10 +21,32 @@
   &__content {
     max-width: 675px;
     margin-left: 110px;
+
+    @include big-tablet {
+      max-width: 50%;
+      margin-left: 50px;
+    }
+    @include tablet {
+      max-width: none;
+      order: -1;
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 25px;
+    }
   }
   &__title {
     font-family: "Liberation", sans-serif;
     margin-bottom: 150px;
+
+    @include big-tablet {
+      margin-bottom: 100px;
+    }
+    @include tablet {
+      margin-bottom: 50px;
+    }
+    @include mobile {
+      margin-bottom: 35px;
+    }
   }
   &__descr {
     margin-bottom: 35px;

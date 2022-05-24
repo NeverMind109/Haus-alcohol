@@ -131,6 +131,15 @@ a {
   font-size: 64px;
   line-height: 80px;
   color: var(--color-black);
+
+  @include tablet {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  @include small-tablet {
+    font-size: 30px;
+    line-height: 45px;
+  }
 }
 
 .subtitle {
@@ -139,12 +148,26 @@ a {
   line-height: 44px;
   text-align: center;
   color: var(--color-black);
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  @include small-tablet {
+    font-size: 25px;
+    line-height: 35px;
+  }
 }
 
 .descr {
   font-size: 18px;
   line-height: 32px;
   color: var(--color-black);
+
+  @include small-tablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .btn {

@@ -3,6 +3,10 @@
   &__container {
     padding: 105px var(--container-offset) 140px;
     border-bottom: 1px solid var(--color-silver);
+
+    @include small-tablet {
+      padding: 35px var(--container-offset);
+    }
   }
   &__title {
     max-width: 675px;
@@ -13,15 +17,29 @@
   &__link-wrapper {
     text-align: center;
     margin-bottom: 82px;
+
+    @include tablet {
+      margin-bottom: 35px;
+    }
+    @include mobile {
+      margin-bottom: 15px;
+    }
   }
   &__list {
     display: flex;
     justify-content: space-between;
     padding: 0 27px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
   }
 }
 .product-card {
   position: relative;
+  max-width: 33%;
   text-align: center;
   &__img {
     background-image: var(--color-silver);
@@ -37,6 +55,10 @@
     text-align: center;
     color: var(--color-black);
     margin-bottom: 27px;
+
+    @include small-tablet {
+      margin-bottom: 15px;
+    }
   }
   &__link {
     display: inline-block;
@@ -57,5 +79,12 @@
     background: var(--color-cod);
     border-radius: 100%;
     padding: 0 10px;
+  }
+
+  @include tablet {
+    max-width: none;
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
   }
 }
