@@ -48,6 +48,10 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--color-light);
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: var(--color-silver);
+    }
 
     @include tablet {
       font-size: 20px;

@@ -158,15 +158,28 @@ a {
   background: var(--color-cod);
   border: 1px solid var(--color-cod);
   padding: 18px 48px 20px;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    border: 1px solid var(--color-light);
+    background: var(--color-black);
+  }
   &--hollow {
     color: var(--color-black);
     background: transparent;
     border: 1px solid var(--color-light);
+    &:hover {
+      border: 1px solid var(--color-black);
+      background: transparent;
+    }
   }
   &--white {
     color: var(--color-black);
     background: var(--color-light);
     border: 1px solid var(--color-light);
+    &:hover {
+      border: 1px solid var(--color-black);
+      background: var(--color-light);
+    }
   }
   &--empty {
     line-height: 18px;
@@ -174,6 +187,11 @@ a {
     background: transparent;
     border: none;
     padding: 0;
+    &:hover {
+      border: none;
+      background: transparent;
+      color: var(--color-accent);
+    }
   }
 }
 
