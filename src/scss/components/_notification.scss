@@ -1,5 +1,9 @@
 .notification {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
   padding: 16px 0;
   background-color: var(--color-cod);
   &__container {

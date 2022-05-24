@@ -6,6 +6,7 @@
   width: 100%;
   background-color: transparent;
   padding: 25px 0 31px;
+  transition: top 0.3s ease-in-out;
   &__container {
     @include flex-all-sb;
   }

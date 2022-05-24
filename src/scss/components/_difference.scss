@@ -1,0 +1,25 @@
+.difference {
+  padding: 60px 0 67px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    display: flex;
+    font-size: 0;
+  }
+  &__content {
+    max-width: 675px;
+    margin-left: 110px;
+  }
+  &__title {
+    font-family: "Liberation", sans-serif;
+    margin-bottom: 150px;
+  }
+  &__descr {
+    margin-bottom: 35px;
+  }
+  &__link {
+    display: inline-block;
+  }
+}

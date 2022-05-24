@@ -1,0 +1,46 @@
+.appreciation {
+  background-color: var(--color-black);
+  padding: 95px 0 69px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__descr {
+    max-width: 320px;
+    color: var(--color-light);
+    margin-bottom: 17px;
+  }
+  &__name {
+    position: relative;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-light);
+    padding-left: 15px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: block;
+      width: 10px;
+      height: 1px;
+      background-color: var(--color-light);
+    }
+  }
+  &__position {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-gray);
+    margin-top: 10px;
+  }
+}

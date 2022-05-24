@@ -1,0 +1,48 @@
+.spotify {
+  @include bg-cover;
+
+  background-color: var(--color-silver);
+  background-image: url("../img/spotify-bg.jpg");
+  padding: 60px 0;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  &__block {
+    max-width: 550px;
+    text-align: center;
+    background-color: var(--color-black);
+    padding: 40px 0;
+    margin-bottom: 17px;
+  }
+  &__title {
+    font-family: "Liberation", sans-serif;
+    font-size: 55px;
+    line-height: 80px;
+    text-align: center;
+    color: var(--color-light);
+    margin-bottom: 12px;
+  }
+  &__descr {
+    max-width: 415px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto 25px;
+    color: var(--color-light);
+  }
+  &__link {
+    display: inline-block;
+    padding: 18px 61px 20px;
+  }
+  &__social {
+    max-width: 550px;
+    text-align: center;
+    background-color: var(--color-black);
+    padding: 30px 0;
+  }
+  &__social-text {
+    margin: 0 auto 17px;
+  }
+}
