@@ -1,13 +1,18 @@
 <section class="aperitifs">
   <div class="container aperitifs__container">
     <div class="aperitifs__image">
-      <img
-        class="aperitifs__img"
-        src="img/aperitifs-img.jpg"
-        alt=""
-        width="1320"
-        height="560"
-      />
+      <picture>
+        <source srcset="img/aperitifs-img.avif" type="image/avif" />
+        <source srcset="img/aperitifs-img.webp" type="image/webp" />
+        <img
+          class="aperitifs__img"
+          loading="lazy"
+          src="img/aperitifs-img.jpg"
+          width="1320"
+          height="560"
+          alt=""
+        />
+      </picture>
     </div>
     <div class="aperitifs__wrapper">
       <h2 class="aperitifs__title">An intro to apéritifs</h2>

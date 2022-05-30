@@ -178,41 +178,41 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-light);
-  background: var(--color-cod);
+  background-color: var(--color-cod);
   border: 1px solid var(--color-cod);
   padding: 18px 48px 20px;
-  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
   &:hover {
     border: 1px solid var(--color-light);
-    background: var(--color-black);
+    background-color: var(--color-black);
   }
   &--hollow {
     color: var(--color-black);
-    background: transparent;
+    background-color: transparent;
     border: 1px solid var(--color-light);
     &:hover {
       border: 1px solid var(--color-black);
-      background: transparent;
+      background-color: transparent;
     }
   }
   &--white {
     color: var(--color-black);
-    background: var(--color-light);
+    background-color: var(--color-light);
     border: 1px solid var(--color-light);
     &:hover {
       border: 1px solid var(--color-black);
-      background: var(--color-light);
+      background-color: var(--color-light);
     }
   }
   &--empty {
     line-height: 18px;
     color: var(--color-black);
-    background: transparent;
+    background-color: transparent;
     border: none;
     padding: 0;
     &:hover {
       border: none;
-      background: transparent;
+      background-color: transparent;
       color: var(--color-accent);
     }
   }

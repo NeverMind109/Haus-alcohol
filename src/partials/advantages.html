@@ -28,13 +28,18 @@
       </li>
     </ul>
     <div class="advantages__image">
-      <img
-        class="advantages__img"
-        src="img/advantages-img.jpg"
-        alt=""
-        width="880"
-        height="608"
-      />
+      <picture>
+        <source srcset="img/advantages-img.avif" type="image/avif" />
+        <source srcset="img/advantages-img.webp" type="image/webp" />
+        <img
+          class="advantages__img"
+          loading="lazy"
+          src="img/advantages-img.jpg"
+          width="880"
+          height="608"
+          alt=""
+        />
+      </picture>
     </div>
   </div>
 </section>

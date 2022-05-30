@@ -1,14 +1,17 @@
 <section class="hero">
   <div class="hero__wrapper">
     <div class="hero__image">
-      <img
-        class="hero__img"
-        src="img/hero-img.jpg"
-        alt=""
-        height="720"
-        width="800"
-        aria-hidden="true"
-      />
+      <picture>
+        <source srcset="img/hero-img.avif" type="image/avif" />
+        <source srcset="img/hero-img.webp" type="image/webp" />
+        <img
+          class="hero__img"
+          src="img/hero-img.jpg"
+          width="800"
+          height="720"
+          alt=""
+        />
+      </picture>
     </div>
     <div class="hero__content">
       <h1 class="hero__title">Alcohol for the modern drinker</h1>

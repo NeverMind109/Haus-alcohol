@@ -233,45 +233,45 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-light);
-  background: var(--color-cod);
+  background-color: var(--color-cod);
   border: 1px solid var(--color-cod);
   padding: 18px 48px 20px;
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+  -o-transition: background-color 0.3s, border 0.3s, color 0.3s;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
 .btn:hover {
   border: 1px solid var(--color-light);
-  background: var(--color-black);
+  background-color: var(--color-black);
 }
 .btn--hollow {
   color: var(--color-black);
-  background: transparent;
+  background-color: transparent;
   border: 1px solid var(--color-light);
 }
 .btn--hollow:hover {
   border: 1px solid var(--color-black);
-  background: transparent;
+  background-color: transparent;
 }
 .btn--white {
   color: var(--color-black);
-  background: var(--color-light);
+  background-color: var(--color-light);
   border: 1px solid var(--color-light);
 }
 .btn--white:hover {
   border: 1px solid var(--color-black);
-  background: var(--color-light);
+  background-color: var(--color-light);
 }
 .btn--empty {
   line-height: 18px;
   color: var(--color-black);
-  background: transparent;
+  background-color: transparent;
   border: none;
   padding: 0;
 }
 .btn--empty:hover {
   border: none;
-  background: transparent;
+  background-color: transparent;
   color: var(--color-accent);
 }
 
@@ -518,6 +518,9 @@ a {
   fill: var(--color-black);
   -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
 }
 .notification__close:hover svg {
   fill: var(--color-light);
@@ -592,6 +595,20 @@ a {
   width: 50%;
   font-size: 0;
 }
+.hero__image picture {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .hero__image picture {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__image picture {
+    height: 250px;
+  }
+}
 @media (max-width: 1024px) {
   .hero__image {
     -webkit-box-ordinal-group: 2;
@@ -613,6 +630,7 @@ a {
 }
 .hero__img {
   width: 100%;
+  height: 100%;
   background-image: var(--color-silver);
 }
 .hero__content {
@@ -1192,11 +1210,14 @@ a {
 }
 
 .spotify {
+  background-image: url("../img/spotify-bg.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set("../img/spotify-bg.avif" type("image/avif"), "../img/spotify-bg.webp" type("image/webp"), "../img/spotify-bg.jpg" type("image/jpg"));
+  background-image: image-set("../img/spotify-bg.avif" type("image/avif"), "../img/spotify-bg.webp" type("image/webp"), "../img/spotify-bg.jpg" type("image/jpg"));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--color-silver);
-  background-image: url("../img/spotify-bg.jpg");
   padding: 60px 0;
 }
 .spotify__container {

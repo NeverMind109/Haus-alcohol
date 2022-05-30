@@ -1,13 +1,18 @@
 <section class="difference">
   <div class="container difference__container">
     <div class="difference__image">
-      <img
-        class="difference__img"
-        src="img/difference-img.jpg"
-        alt=""
-        width="550"
-        height="470"
-      />
+      <picture>
+        <source srcset="img/difference-img.avif" type="image/avif" />
+        <source srcset="img/difference-img.webp" type="image/webp" />
+        <img
+          class="difference__img"
+          loading="lazy"
+          src="img/difference-img.jpg"
+          width="550"
+          height="470"
+          alt=""
+        />
+      </picture>
     </div>
     <div class="difference__content">
       <h2 class="section-title difference__title">

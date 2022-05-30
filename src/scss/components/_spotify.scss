@@ -1,8 +1,8 @@
 .spotify {
+  @include image-set("../img/spotify-bg");
   @include bg-cover;
 
   background-color: var(--color-silver);
-  background-image: url("../img/spotify-bg.jpg");
   padding: 60px 0;
   &__container {
     display: flex;
