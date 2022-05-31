@@ -534,9 +534,9 @@ a {
   width: 100%;
   background-color: transparent;
   padding: 25px 0 31px;
-  -webkit-transition: top 0.3s ease-in-out;
-  -o-transition: top 0.3s ease-in-out;
-  transition: top 0.3s ease-in-out;
+  -webkit-transition: top 0.2s;
+  -o-transition: top 0.2s;
+  transition: top 0.2s;
 }
 .header__container {
   display: -webkit-box;
